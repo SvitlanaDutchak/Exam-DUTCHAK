@@ -10,8 +10,7 @@
 }
 
 .about {
-  display: flex;
-  align-items: center;
+  @extend %align-center;
   margin-top: -64px;
   &__item {
     &--content {
@@ -62,11 +61,8 @@
 .products {
   margin: 140px 0;
   &__cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @extend %justify-between;
     gap: 86px;
-    justify-content: space-between;
   }
   &__item {
     width: 45%;
@@ -78,13 +74,11 @@
   background: url("../images/quote-background.png");
   @include backgroung;
   height: 400px;
-  display: flex;
+  @extend %flex;
 
   &__content {
     margin-left: 129px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend %flex-column;
     gap: 40px;
     position: relative;
     flex-basis: 760px;
@@ -99,40 +93,25 @@
 
 .cases {
   margin: 121px 0;
-  display: flex;
-  flex-direction: column;
+  @extend %column;
   &__video {
     width: 900px;
     height: 552px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #d6d4d4;
+    @extend %align-justify-center;
+    border: 1px solid rgba($main-color, 0.8);
     border-radius: 32px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 55px;
 
     &::before {
-      content: "";
-      width: 12px;
-      height: 12px;
-      border: 1px solid rgba($main-color,  0.8);
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(0px, -50%);
+      @include circle;
       left: 8px;
     }
     &::after {
-      content: "";
+      @include circle;
       width: 32px;
-      height: 32px;   
-      border: 1px solid rgba($main-color,  0.8);
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(0px, -50%);
+      height: 32px;  
       right: 14px;
     }
   }
@@ -146,19 +125,18 @@
     @include backgroung;
     width: 50%;
     height: 560px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align-justify-center;
+    flex-wrap: wrap;
   }
   
     &__card {
-    width: 240px;
-    height: 331px;
-    left: 140px;
-    top: 3737px;
-    background: #161926;
-    box-shadow: 0px 8px 12px rgba(38, 42, 63, 0.24), 0px 32px 64px rgba(38, 42, 63, 0.24);
-    border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    // width: 240px;
+    // height: 331px;
+    // background: #161926;
+    // border-radius: 12px;
     }
   
     &__content {
@@ -177,15 +155,12 @@
   
     &__item {
       flex: 1 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: right;
+      @extend %column;
+    
       &--border {
         width: 250px;
         height: 92px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %align-justify-center;
         flex-direction: column;
         border: 1px solid #E4E4E4;
       }
@@ -194,7 +169,7 @@
 
   .contact {
     margin: 250px 0 120px;
-    display: flex;
+    @extend %flex;
     gap: 174px;
     position: relative;
 

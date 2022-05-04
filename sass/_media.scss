@@ -1,6 +1,8 @@
 @media (max-width: 1200px) {
   .about {
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     &__item{
       &--content {
         position: static;
@@ -20,6 +22,21 @@
   .card {
     padding: 0;
     margin-bottom: 50px;
+  }
+  .wallet {
+    &__content{
+      position: static;
+      transform: translate(0);
+      padding: 40px 0 0 0;
+    }
+    &__bg {
+      width: 100%;
+    }
+    &__item {
+      &--border {
+        max-width: 250px;
+      }
+    }
   }
 }
 
@@ -80,6 +97,13 @@ flex-direction: column;
 .video {
   transform: scale(0.5) rotate(-90deg);
 }
+.wallet {
+  &__item{
+    &--border {
+      max-width: 100%;
+    }
+  }
+}
 
 .contact {
   flex-wrap: wrap;
@@ -98,21 +122,7 @@ flex-direction: column;
   }
 }
 
-.wallet {
-  &__content{
-    position: static;
-    transform: translate(0);
-    padding: 40px 0 0 0;
-  }
-  &__bg {
-    width: 100%;
-  }
-  &__item {
-    &--border {
-      max-width: 100%;
-    }
-  }
-}
+
 
 .title-white {
   font-size: 22px;
@@ -128,6 +138,19 @@ flex-direction: column;
   margin: 50px 0 30px 0;
 }
 }
+
+@media screen and (max-width:576px) {
+  .background {
+    &__content {
+      margin-left: 30px;
+      gap:20px;
+      &::before {
+        left: -20px;
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width:376px) {
   .about {

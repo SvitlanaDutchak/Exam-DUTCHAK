@@ -1,21 +1,14 @@
 .title {
-  font-family: $secondary-font-famile;
-  font-weight: $base-font-weight;
-  font-size: 44px;
-  line-height: 52px;
-  color: $main-color;
+  @include text-style ($secondary-font-famile, 44px, 52px, $main-color);
   
   &--green {
     color: rgba(133,187,177,255);
+    font-style: italic;
   }
 }
 
 .sub-title {
-  font-family: $secondary-font-famile;
-  font-weight: $base-font-weight;
-  font-size: 40px;
-  line-height: 48px;
-  color: $main-color;
+  @include text-style ($secondary-font-famile, 40px, 48px, $main-color);
 
   &--mr {
     margin: 32px 0 24px;
@@ -26,12 +19,8 @@
 }
 
 .title-large {
-  font-family: $secondary-font-famile;
-  font-weight: $base-font-weight;
-  font-size: 68px;
-  line-height: 72px;
-  color: $main-color;
   margin-bottom: 12px;
+  @include text-style ($secondary-font-famile, 68px, 72px, $main-color);
   
   &--grey {
     color: #E4E4E4;
@@ -40,11 +29,7 @@
 }
 
 .text {
-  font-family: $base-font-famile;
-  font-weight: 300;
-  font-size: $base-font-size;
-  line-height: 26px;
-  color: rgba($main-color, 0.8);
+  @include text-style ($base-font-famile, $base-font-size, 26px, rgba($main-color, 0.8), normal, 300);
 
   &--mr {
     margin: 24px 0 50px;
@@ -52,44 +37,26 @@
 }
 
 .title-white {
-  font-size: 32px;
-  line-height: 46px;
-  letter-spacing: 0.04em;
-  color: #FFFFFF;
+  @include text-style ($base-font-famile, 32px, 46px, #fff, 0.04em);
 }
 
 .text-white {
-  font-family: $secondary-font-famile;
+  @include text-style ($secondary-font-famile, 20px, 20px, #fff, 0.08em);
   font-style: italic;
-  font-size: 20px;
-  line-height: 20px;
-  letter-spacing: 0.08em;
-  color: #FFFFFF;
 }
 
 .title-small {
-  font-family: $secondary-font-famile;
-  font-size: 24px;
-  line-height: 48px;
   margin-bottom: 14px;
+  @include text-style ($secondary-font-famile, 24px, 48px);
 }
 
 .footer__text {
-  font-family: $base-font-famile;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 26px;
-  color: rgba($main-color, 0.6);
+  @include text-style ($base-font-famile, 14px, 26px, rgba($main-color, 0.6), normal, 300);
 }
 
 .bitcoin-text {
-  font-family: $base-font-famile;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  color:rgba(#fff, 0.3);
-
+  @include text-style ($base-font-famile, 12px, 24px, rgba(#fff, 0.3), 0.04em, 600);
+  
   &--white {
   font-size: 14px;
   color:rgba(#fff, 0.8);

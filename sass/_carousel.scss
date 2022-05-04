@@ -7,6 +7,11 @@
     height: 333px;
     padding: 50px;
   }
+
+  &__text {
+    margin-bottom: 32px;
+    @include text-style ($base-font-famile, 16px, 26px, rgba( #fff, 0.8));
+    }
 }
 
 .slide1 {
@@ -25,12 +30,6 @@
   background: url("../images/carousel/image4.png");
   @include backgroung;
 }
-.carousel__text {
-  font-size: 16px;
-  line-height: 26px;
-  color: rgba( #fff, 0.8);
-  margin-bottom: 32px;
-  }
   
 .carousel-content {
   margin: 150px 0 30px 0;

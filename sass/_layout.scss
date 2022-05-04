@@ -20,8 +20,8 @@
 }
 
 .footer {
-  display: flex;
   position: relative;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -32,14 +32,10 @@
     top: 0;
   }
   &__list {
-    display: flex;
+    @extend %flex;
     gap: 32px;
   }
   &__link {
-  font-family: $base-font-famile;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-  color: #262A3F;
+  @include text-style ($base-font-famile, 14px, 24px, $main-color, 0.08em);
   }
 }

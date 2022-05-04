@@ -37,9 +37,7 @@
   width: 812px;
   height: 502px;
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-justify-center;
   margin: 10px;
 }
 
@@ -55,17 +53,11 @@
   height: 32px;
   border: none;
   border-bottom: 1px solid rgba($main-color, 0.1);
-  font-family: $secondary-font-famile;
-  color: rgba($main-color, 0.8) ;
-  font-size: $base-font-size;
+  @include text-style ($secondary-font-famile, $base-font-size, 20px, rgba($main-color, 0.7), 0.08em);
 
   &::placeholder {
-  font-family: $secondary-font-famile;
-  font-style: italic;
-  font-size:$base-font-size;
-  line-height: 20px;
-  letter-spacing: 8%;
-  color: rgba($main-color, 0.5);
+    @include text-style ($secondary-font-famile, $base-font-size, 20px, rgba($main-color, 0.5), 8%);
+    font-style: italic;
   }
   &:focus{
   outline: none;

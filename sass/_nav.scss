@@ -5,11 +5,7 @@
   }
 
   &__link {
-    font-family: $base-font-famile;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.08em;
-    color: $main-color;
+    @include text-style ($base-font-famile, 14px, 24px, $main-color, 0.08em);
 
     &:hover {
       border-bottom: 2px solid rgba($main-color, 0.6);
