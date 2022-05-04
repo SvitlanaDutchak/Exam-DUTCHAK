@@ -861,6 +861,16 @@ body {
             transform: scale(0.5) rotate(90deg) translate(0, 600px);
   }
 
+  .btn-none {
+    position: static;
+    background-color: rgba(241, 137, 123, 0.3);
+  }
+  .btn-none::after {
+    content: "";
+    width: 0;
+    position: static;
+  }
+
   .video {
     -webkit-transform: scale(0.5) rotate(-90deg);
             transform: scale(0.5) rotate(-90deg);
@@ -913,7 +923,7 @@ body {
 }
 @media screen and (max-width: 376px) {
   .about {
-    margin-top: 35px;
+    margin-top: 0px;
   }
 
   .title-white {
