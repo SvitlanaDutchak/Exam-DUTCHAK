@@ -1,0 +1,83 @@
+.title {
+  font-family: $secondary-font-famile;
+  font-weight: $base-font-weight;
+  font-size: 44px;
+  line-height: 52px;
+  color: $main-color;
+  
+  &--green {
+    color: rgba(133,187,177,255);
+  }
+}
+
+.sub-title {
+  font-family: $secondary-font-famile;
+  font-weight: $base-font-weight;
+  font-size: 40px;
+  line-height: 48px;
+  color: $main-color;
+
+  &--mr {
+    margin: 32px 0 24px;
+  }
+  &--mr-bottom{
+    margin-bottom: 24px;
+  }
+}
+
+.title-large {
+  font-family: $secondary-font-famile;
+  font-weight: $base-font-weight;
+  font-size: 68px;
+  line-height: 72px;
+  color: $main-color;
+  margin-bottom: 12px;
+  
+  &--grey {
+    color: #E4E4E4;
+    font-size: 40px;
+  }
+}
+
+.text {
+  font-family: $base-font-famile;
+  font-weight: 300;
+  font-size: $base-font-size;
+  line-height: 26px;
+  color: rgba($main-color, 0.8);
+
+  &--mr {
+    margin: 24px 0 50px;
+  }
+}
+
+.title-white {
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.text-white {
+  font-family: $secondary-font-famile;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+}
+
+.title-small {
+  font-family: $secondary-font-famile;
+  font-size: 24px;
+  line-height: 48px;
+  margin-bottom: 14px;
+}
+
+.footer__text {
+  font-family: $base-font-famile;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba($main-color, 0.6);
+}

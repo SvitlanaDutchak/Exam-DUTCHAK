@@ -1,0 +1,12 @@
+@mixin line {
+    width: 100%;
+    height: 1px;
+    background-color: #E4E4E4;
+    position: absolute; 
+}
+
+@mixin backgroung {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
