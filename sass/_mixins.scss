@@ -1,0 +1,32 @@
+@mixin line {
+    width: 100%;
+    height: 1px;
+    background-color: #E4E4E4;
+    position: absolute; 
+}
+
+@mixin backgroung {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin text-style ($ff, $fz, $lh, $color:$main-color, $letter-s:normal, $fw:$base-font-weight) {
+  font-family: $ff;
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $letter-s;
+  color: $color;
+}
+
+@mixin circle {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba($main-color,  0.6);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+}

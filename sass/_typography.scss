@@ -1,0 +1,65 @@
+.title {
+  @include text-style ($secondary-font-famile, 44px, 52px, $main-color);
+  
+  &--green {
+    color: rgba(133,187,177,255);
+    font-style: italic;
+  }
+}
+
+.sub-title {
+  @include text-style ($secondary-font-famile, 40px, 48px, $main-color);
+
+  &--mr {
+    margin: 32px 0 24px;
+  }
+  &--mr-bottom{
+    margin-bottom: 24px;
+  }
+}
+
+.title-large {
+  margin-bottom: 12px;
+  @include text-style ($secondary-font-famile, 68px, 72px, $main-color);
+  
+  &--grey {
+    color: #E4E4E4;
+    font-size: 40px;
+  }
+}
+
+.text {
+  @include text-style ($base-font-famile, $base-font-size, 26px, rgba($main-color, 0.8), normal, 300);
+
+  &--mr {
+    margin: 24px 0 50px;
+  }
+}
+
+.title-white {
+  @include text-style ($base-font-famile, 32px, 46px, #fff, 0.04em);
+}
+
+.text-white {
+  @include text-style ($secondary-font-famile, 20px, 20px, #fff, 0.08em);
+  font-style: italic;
+}
+
+.title-small {
+  margin-bottom: 14px;
+  @include text-style ($secondary-font-famile, 24px, 48px);
+}
+
+.footer__text {
+  @include text-style ($base-font-famile, 14px, 26px, rgba($main-color, 0.6), normal, 300);
+}
+
+.bitcoin-text {
+  @include text-style ($base-font-famile, 12px, 24px, rgba(#fff, 0.3), 0.04em, 600);
+  
+  &--white {
+  font-size: 14px;
+  color:rgba(#fff, 0.8);
+  }
+}
+

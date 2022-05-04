@@ -3,3 +3,39 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.header {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(9px);
+  padding: 28px 0;
+  position: relative;
+  top: 31px;
+
+&__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px 0;
+  &::before {
+    content: "";
+    @include line;
+    top: 0;
+  }
+  &__list {
+    @extend %flex;
+    gap: 32px;
+  }
+  &__link {
+  @include text-style ($base-font-famile, 14px, 24px, $main-color, 0.08em);
+  }
+}

@@ -1,0 +1,179 @@
+.hero {
+  background: url("../images/first-screen-image.png");
+  @include backgroung;
+  height: 100vh;
+
+  &__content {
+  margin-top: 150px;
+  max-width: 560px;
+  }
+}
+
+.about {
+  @extend %align-center;
+  margin-top: -64px;
+  &__item {
+    &--content {
+      z-index: 1;
+      max-width: 760px;
+      left: 40%;
+      background-color: rgba(#fff, 0.9);
+      position: absolute;
+    }
+    &--img {
+      position: relative;
+    }
+    
+  }
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding-top: 42px;
+  }
+  &__col {
+    height: 560px;
+    flex-basis: 60%;
+    &:nth-child(2) {
+      flex-basis: 40%;
+    }
+  }
+}
+
+.card {
+  padding: 0 60px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 90px;
+  &:nth-child(1)::after, &:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 82px;
+    height: 1px;
+    background-color: #85BBB1;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    margin: 49px 0;
+  }
+
+}
+
+.products {
+  margin: 140px 0;
+  &__cards {
+    @extend %justify-between;
+    gap: 86px;
+  }
+  &__item {
+    width: 45%;
+    border-top: 1px solid #E4E4E4;
+  }
+}
+
+.background {
+  background: url("../images/quote-background.png");
+  @include backgroung;
+  height: 400px;
+  @extend %flex;
+
+  &__content {
+    margin-left: 129px;
+    @extend %flex-column;
+    gap: 40px;
+    position: relative;
+    flex-basis: 760px;
+    &::before {
+      content: url(../images/quote-icon.svg);
+      position: absolute;
+      top: 60px;
+      left: -60px;
+    }
+  }
+}
+
+.cases {
+  margin: 121px 0;
+  @extend %column;
+  &__video {
+    width: 900px;
+    height: 552px;
+    @extend %align-justify-center;
+    border: 1px solid rgba($main-color, 0.8);
+    border-radius: 32px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 55px;
+
+    &::before {
+      @include circle;
+      left: 8px;
+    }
+    &::after {
+      @include circle;
+      width: 32px;
+      height: 32px;  
+      right: 14px;
+    }
+  }
+}
+
+.wallet {
+  position: relative;
+
+  &__bg {
+    background: url(../images/features-background-image.png);
+    @include backgroung;
+    width: 50%;
+    height: 560px;
+    @extend %align-justify-center;
+    flex-wrap: wrap;
+  }
+  
+    &__card {
+      @extend %align-justify-center;
+    }
+  
+    &__content {
+      background-color: rgba(#fff, 0.9);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 57px;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      left: 410px;
+      transform: translate(0, -50%);
+      padding: 72px 18px 72px 64px;
+    }
+  
+    &__item {
+      flex: 1 0 auto;
+      @extend %column;
+    
+      &--border {
+        width: 250px;
+        height: 92px;
+        @extend %align-justify-center;
+        flex-direction: column;
+        border: 1px solid #E4E4E4;
+      }
+    }
+  }
+
+  .contact {
+    margin: 250px 0 120px;
+    @extend %flex;
+    gap: 174px;
+    position: relative;
+
+    &::before {
+      content: "";
+      @include line;
+      top: -100px;
+    }
+    
+    &__content {
+      max-width: 500px;
+    }
+  }

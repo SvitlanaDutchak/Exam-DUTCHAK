@@ -23,7 +23,6 @@
 
 %justify-between {
   @extend %flex;
-  @extend %align-center;
   @extend %wrap;
   justify-content: space-between;
 }
@@ -46,7 +45,13 @@
   flex-direction: column;
 }
 
+%column {
+  @extend %flex;
+  flex-direction: column;
+}
+
 %flex-column {
   @extend %flex;
+  @extend %justify-center;
   flex-direction: column;
 }
