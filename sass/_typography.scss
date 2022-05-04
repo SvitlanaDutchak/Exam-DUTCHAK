@@ -81,3 +81,18 @@
   line-height: 26px;
   color: rgba($main-color, 0.6);
 }
+
+.bitcoin-text {
+  font-family: $base-font-famile;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color:rgba(#fff, 0.3);
+
+  &--white {
+  font-size: 14px;
+  color:rgba(#fff, 0.8);
+  }
+}
+

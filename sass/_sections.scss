@@ -101,15 +101,13 @@
   margin: 121px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   &__video {
     width: 900px;
     height: 552px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #E4E4E4;
+    border: 1px solid #d6d4d4;
     border-radius: 32px;
     margin: 0 auto;
     position: relative;
@@ -119,7 +117,7 @@
       content: "";
       width: 12px;
       height: 12px;
-      border: 1px solid #E4E4E4;
+      border: 1px solid rgba($main-color,  0.8);
       border-radius: 50%;
       position: absolute;
       top: 50%;
@@ -130,7 +128,7 @@
       content: "";
       width: 32px;
       height: 32px;   
-      border: 1px solid #E4E4E4;
+      border: 1px solid rgba($main-color,  0.8);
       border-radius: 50%;
       position: absolute;
       top: 50%;
@@ -183,7 +181,6 @@
       flex-direction: column;
       justify-content: right;
       &--border {
-
         width: 250px;
         height: 92px;
         display: flex;
@@ -196,15 +193,15 @@
   }
 
   .contact {
-    margin: 120px 0;
+    margin: 250px 0 120px;
     display: flex;
     gap: 174px;
-    padding-top: 120px;
     position: relative;
+
     &::before {
       content: "";
       @include line;
-      top: 0;
+      top: -100px;
     }
     
     &__content {

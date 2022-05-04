@@ -10,3 +10,10 @@
   background-position: center;
   background-size: cover;
 }
+
+@mixin text-style ($fz, $lh, $letter-s:normal, $fw:$base-font-weight) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $letter-s;
+}

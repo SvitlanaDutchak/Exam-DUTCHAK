@@ -1,3 +1,28 @@
+@media (max-width: 1200px) {
+  .about {
+    flex-wrap: wrap;
+    &__item{
+      &--content {
+        position: static;
+        flex: 1 1 auto;
+      }
+    }
+    &__row {
+      flex-wrap: wrap;
+    }
+    &__col{
+      height: 100%;
+      &:nth-child(2){
+        flex-basis: 90%;
+      }
+    }
+  }
+  .card {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (max-width:768px) {
 .lock-scroll {
   overflow: hidden;
@@ -46,14 +71,87 @@ flex-direction: column;
 }
 
 .cases {
+  margin: 0 0 50px 0;
   &__video {
-    transform: scale(0.5) rotate(-90deg);
-  
+    transform: scale(0.5) rotate(90deg) translate(0, 600px);
   }
 }
 
 .video {
-  transform: scale(0.5) rotate(90deg);
- 
+  transform: scale(0.5) rotate(-90deg);
 }
+
+.contact {
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.input {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.products {
+  margin: 70px 0;
+  &__item {
+    width: 90%;
+  }
+}
+
+.wallet {
+  &__content{
+    position: static;
+    transform: translate(0);
+    padding: 40px 0 0 0;
+  }
+  &__bg {
+    width: 100%;
+  }
+  &__item {
+    &--border {
+      max-width: 100%;
+    }
+  }
+}
+
+.title-white {
+  font-size: 22px;
+}
+
+.slider {
+  &__card {
+  height: 430px;
+  }
+}
+
+.carousel-content{
+  margin: 50px 0 30px 0;
+}
+}
+
+@media screen and (max-width:376px) {
+  .about {
+    margin-top: 35px;
+  }
+  .title-white {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) { 
+  .hero { 
+    background: url("../images/first-screen-image-2x.png") no-repeat center/cover;
+  }
+  .background {
+    background: url("../images/quote-background-2x.png");
+  }
+}
+
+@media screen and (min-width: 2560px) { 
+  .hero { 
+    background: url("../images/first-screen-image-3x.png") no-repeat center/cover;
+  }
+  .background {
+    background: url("../images/quote-background-3x.png");
+  }
 }

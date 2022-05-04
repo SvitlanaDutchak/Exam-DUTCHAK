@@ -1,36 +1,41 @@
-.carousel {
-  margin: 150px 0 196px;
-  height: 333px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-
-  &__content {
-    max-width: 329px;
-  }
-
-  &__cards {
-    display: flex;
-    gap: 20px;
-  }
+.slider {
+  padding-bottom: 20px;
 
   &__card {
+    margin-right:20px;
     width: 468px;
     height: 333px;
-    background: url("../images/carousel/image1.png");
-    @include backgroung;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 48px;
+    padding: 50px;
   }
+}
 
-  &__text {
+.slide1 {
+  background: url("../images/carousel/image1.png");
+  @include backgroung;
+}
+.slide2 {
+  background: url("../images/carousel/image2.png");
+  @include backgroung;
+}
+.slide3 {
+  background: url("../images/carousel/image3.png");
+  @include backgroung;
+}
+.slide4 {
+  background: url("../images/carousel/image4.png");
+  @include backgroung;
+}
+.carousel__text {
   font-size: 16px;
   line-height: 26px;
   color: rgba( #fff, 0.8);
   margin-bottom: 32px;
   }
-
-
+  
+.carousel-content {
+  margin: 150px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
 }
+
