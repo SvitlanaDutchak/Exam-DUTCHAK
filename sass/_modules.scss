@@ -63,3 +63,14 @@
   outline: none;
   }
 }
+
+.dark {
+  width: 32px;
+  height: 32px;
+  background: rgba($main-color, 0.3);
+  border:none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}

@@ -130,13 +130,7 @@
   }
   
     &__card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    // width: 240px;
-    // height: 331px;
-    // background: #161926;
-    // border-radius: 12px;
+      @extend %align-justify-center;
     }
   
     &__content {
